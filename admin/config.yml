@@ -13,6 +13,6 @@ collections:
         label: "Home Content"
         name: "home"
         fields:
-          - { label: "Hero Title", name: "title", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Intro Paragraph", name: "intro", widget: "text" }
