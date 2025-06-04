@@ -6,13 +6,19 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "home"
+  - name: home
     label: "Homepage"
     files:
       - file: "home.md"
         label: "Home Content"
         name: "home"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Intro Paragraph", name: "intro", widget: "text" }
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Tagline"
+            name: "tagline"
+            widget: "string"
+          - label: "Intro Paragraph"
+            name: "intro"
+            widget: "text"
