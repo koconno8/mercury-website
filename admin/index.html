@@ -8,10 +8,10 @@
   </head>
   <body>
     <script>
-      // Completely manual initialization to force PKCE
+      // Prevent auto-initialization
       window.CMS_MANUAL_INIT = true;
-      
-      // Override the config before CMS loads
+
+      // Define your config
       window.CMS_CONFIG = {
         backend: {
           name: 'github',
@@ -43,11 +43,14 @@
         ]
       };
     </script>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js" onload="window.CMS.init()"></script>
+
+    <!-- Load the CMS script (DO NOT auto-init here) -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+    <!-- Manual init after script is loaded -->
     <script>
-      // Initialize with the forced config
-      window.CMS.init({
-        config: window.CMS_CONFIG
+      window.addEventListener('DOMContentLoaded', function () {
+        window.CMS.init(window.CMS_CONFIG);
       });
     </script>
   </body>
