@@ -1,7 +1,9 @@
 backend:
   name: github
-  repo: koconno8/mercury-website  # replace with your GitHub username/repo
+  repo: koconno8/mercury-website  # Your GitHub repo
   branch: main
+  base_url: https://auth.decapcms.org
+  auth_endpoint: aut
 
 media_folder: "images"
 public_folder: "/images"
