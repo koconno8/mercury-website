@@ -2,8 +2,7 @@ backend:
   name: github
   repo: koconno8/mercury-website
   branch: main
-  base_url: https://auth.decapcms.org
-  auth_endpoint: auth
+  auth_type: implicit
 
 media_folder: "images"
 public_folder: "/images"
