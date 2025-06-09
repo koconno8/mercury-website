@@ -2,7 +2,9 @@ backend:
   name: github
   repo: koconno8/mercury-website
   branch: main
-  auth_endpoint: /admin/auth
+  auth_type: oauth
+  client_id: Ov23li0xPVXFML9FiX5k
+
 
 media_folder: "images"
 public_folder: "/images"
