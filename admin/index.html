@@ -7,6 +7,48 @@
     <title>Content Manager</title>
   </head>
   <body>
+    <script>
+      // Completely manual initialization to force PKCE
+      window.CMS_MANUAL_INIT = true;
+      
+      // Override the config before CMS loads
+      window.CMS_CONFIG = {
+        backend: {
+          name: 'github',
+          repo: 'koconno8/mercury-website',
+          branch: 'main',
+          auth_type: 'pkce',
+          client_id: '0v231tBrJXYPfMLJ1X5k'
+        },
+        site_url: 'https://koconno8.github.io/mercury-website',
+        media_folder: 'images',
+        public_folder: '/images',
+        collections: [
+          {
+            name: 'home',
+            label: 'Homepage',
+            files: [
+              {
+                file: 'home.md',
+                label: 'Home Page Content',
+                name: 'home',
+                fields: [
+                  { label: 'Title', name: 'title', widget: 'string' },
+                  { label: 'Tagline', name: 'tagline', widget: 'string' },
+                  { label: 'Intro', name: 'intro', widget: 'text' }
+                ]
+              }
+            ]
+          }
+        ]
+      };
+    </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      // Initialize with the forced config
+      window.CMS.init({
+        config: window.CMS_CONFIG
+      });
+    </script>
   </body>
 </html>
