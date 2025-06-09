@@ -3,6 +3,7 @@ backend:
   repo: koconno8/mercury-website
   branch: main
   auth_type: pkce
+  client_id: 0v231tBrJXYPfMLJ1X5k  # This is your Client ID from the screenshot
 
 site_url: https://koconno8.github.io/mercury-website
 
