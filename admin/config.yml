@@ -1,25 +1,19 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: koconno8/mercury-website  # replace with your GitHub username/repo
   branch: main
-
 
 media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: home
+  - name: "homepage"
     label: "Homepage"
     files:
       - file: "home.md"
         label: "Home Content"
         name: "home"
         fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-          - label: "Tagline"
-            name: "tagline"
-            widget: "string"
-          - label: "Intro Paragraph"
-            name: "intro"
-            widget: "text"
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Intro Paragraph", name: "intro", widget: "text" }
