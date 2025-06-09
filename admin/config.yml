@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: koconno8/mercury-website  # Your GitHub repo
+  repo: koconno8/mercury-website
   branch: main
   base_url: https://auth.decapcms.org
   auth_endpoint: auth
@@ -9,13 +9,13 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "homepage"
+  - name: "home"
     label: "Homepage"
     files:
       - file: "home.md"
-        label: "Home Content"
+        label: "Home Page Content"
         name: "home"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Intro Paragraph", name: "intro", widget: "text" }
+          - { label: "Intro", name: "intro", widget: "text" }
