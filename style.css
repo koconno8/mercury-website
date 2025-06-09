@@ -14,7 +14,8 @@ body {
 
 /* Header */
 header {
-  background-color: #111;
+  /*background-color: #111;*/
+  background: #222 url('./images/IMG_9911.jpg') center/cover no-repeat;;
   color: #fff;
   padding: 1rem 2rem;
   text-align: center;
@@ -38,7 +39,7 @@ nav a:hover {
 
 /* Hero Section */
 #hero {
-  background: #222 url('./images/IMG_9911.jpg') center/cover no-repeat;
+  background: #222 url('./images/MercuryTruck2.jpg') center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 8rem 2rem;
