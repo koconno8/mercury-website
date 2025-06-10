@@ -12,35 +12,40 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Header */
+/* Header background image */
+/* Header image */
 header {
-  /*background-color: #111;*/
-  background: #222 url('./images/IMG_9911.jpg') center/cover no-repeat;;
-  color: #fff;
-  padding: 1rem 2rem;
+  background: #333 url('./images/MercuryTruck2.jpg') center/contain no-repeat;
+  color: white;
   text-align: center;
+  padding: 6rem 2rem;
 }
 
-header h1 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+/* Nav bar separately styled */
+nav {
+  background-color: #333;
+  text-align: center;
+  padding: 1rem;
 }
 
+
+/* Nav links */
 nav a {
-  margin: 0 1rem;
-  color: #ddd;
+  margin: 0 2rem;
+  color: white; /* white or light gray instead of black */
   text-decoration: none;
   font-weight: bold;
 }
 
+
 nav a:hover {
-  color: #fff;
+  color: #000;
 }
 
 /* Hero Section */
 #hero {
-  background: #222 url('./images/MercuryTruck2.jpg') center/cover no-repeat;
-  color: white;
+  background: #f9f9f9 /*url('./images/MercuryTruck2.jpg') center/cover no-repeat*/;
+  color: #000;
   text-align: center;
   padding: 8rem 2rem;
 }
